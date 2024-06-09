@@ -1,0 +1,29 @@
+.banniere {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 1%;
+}
+
+.nbarticles {
+    border: 1px solid black;
+    display: flex;
+    justify-content: left;
+    padding: 2%;
+    text-align: center;
+}
+
+.nbarticlespanier {
+    border: 1px solid black;
+    display: flex;
+    justify-content: left;
+    padding: 2%;
+    text-align: center;
+}
+
+.achat-container {
+    border: 1px solid black;
+    display: flex;
+    margin: 1%;
+    align-items: center;
+}

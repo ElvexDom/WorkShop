@@ -1,0 +1,18 @@
+@if (articlePanier) {
+<mat-card class="container-panier-view">
+  <mat-card-actions>
+    <button (click)="this.articlePanier.withdrawNbArticle()" mat-mini-fab color="accent" aria-label="Button with a less icon">
+      <mat-icon>remove_circle_outline</mat-icon>
+    </button>
+    <button (click)="this.articlePanier.addNbArticle()" mat-mini-fab color="accent" aria-label="Button with a more icon">
+      <mat-icon>add_circle_outline</mat-icon>
+    </button>
+  </mat-card-actions>
+  <mat-card-content>
+    <b>{{articlePanier.getArticle().nom}} : </b>
+    {{articlePanier.getNbArticle()}} x
+    {{(articlePanier.getArticle().prix)?.toFixed(2)}} &#x20AC; =
+    {{this.articlePrixTotal.toFixed(2)}} &#x20AC;
+  </mat-card-content>
+</mat-card>
+}

@@ -1,0 +1,12 @@
+<div class="banniere">
+    <div class = "nbarticles"><b>Nb articles : </b> {{articlesAch?.length}}</div>
+    <div class = "nbarticlespanier"><b>Nb articles Panier : </b>{{articlesPanier.length}}</div>
+</div>
+<div class="achat-container">
+    <div class="list-article">
+        <app-list-article [articles]="articlesAch" (clicked)="articleSelected($event)"></app-list-article>
+    </div>
+    <div class="item-panier">
+        <app-list-item-panier-view [panier]="articlesPanier"></app-list-item-panier-view>
+    </div>
+</div>

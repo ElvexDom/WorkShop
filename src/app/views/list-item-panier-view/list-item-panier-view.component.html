@@ -1,0 +1,11 @@
+<div class="container-list-item-panier">
+    @if (panier) {
+    @for (item of panier; track $index) {
+    <ng-container *ngTemplateOutlet="panierview; context: { 'myarticle': item }"></ng-container>
+    }
+    <ng-template #panierview let-articlepanier="myarticle">
+        <app-panier-view [articlePanier]="articlepanier"></app-panier-view>
+    </ng-template>
+    }
+</div>
+<div class="totalpanier"><b>Total : </b>{{this.panierPrixTotal.toFixed(2)}} &#x20AC;</div>

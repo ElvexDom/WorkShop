@@ -1,0 +1,11 @@
+<div class="list-container">
+    @if (articles) {
+
+    @for (item of articles; track $index) {
+        <ng-container *ngTemplateOutlet="cardArticle; context: { 'myarticle': item }"></ng-container>
+    }
+    <ng-template #cardArticle let-articlelocal="myarticle">
+        <app-card-article (click) = "clickArticle(articlelocal)" [article]="articlelocal"></app-card-article>
+    </ng-template>
+    }
+</div>
