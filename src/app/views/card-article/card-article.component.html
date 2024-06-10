@@ -5,22 +5,22 @@
         <mat-card-title-group>
             <mat-card-title>{{article.nom}}</mat-card-title>
             @if (article.prix) {
-            <mat-card-subtitle class="prixArticle">{{article.prix.toFixed(2)}} &#x20AC;</mat-card-subtitle>
+            <mat-card-subtitle>{{article.prix.toFixed(2)}} &#x20AC;</mat-card-subtitle>
             }
             @else {
             <mat-card-subtitle>Aucun Prix</mat-card-subtitle>
             }
         </mat-card-title-group>
     </mat-card-header>
-    <mat-card-content class="card-description">
+    <mat-card-content>
         {{article.description}}
     </mat-card-content>
-    <mat-card-content class="photoImg">
+    <mat-card-content class="card-img">
         @if (article.image) {
-        <img mat-card-lg-image src={{article.image}}>
+        <img class = "imgCard" mat-card-lg-image src={{article.image}}>
         }
         @else {
-        <img mat-card-lg-image src="../../../assets/no-image.png">
+        <img class = "imgCard" mat-card-lg-image src="../../../assets/no-image.png">
         }
     </mat-card-content>
 </mat-card>

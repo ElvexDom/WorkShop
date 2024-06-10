@@ -1,10 +1,15 @@
 .container-list-item-panier {
-    width: 150%;
-    margin: 10%;
+    display:contents;
+    justify-content: left;
+    width: 100%;
 }
 
 .totalpanier {
     border: 3px solid black;
-    width: 150%;
-    margin: 10%;
+    width: 100%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    margin-bottom: 2%;
+    position: relative;
+    right: 2px;
 }

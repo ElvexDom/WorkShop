@@ -5,7 +5,7 @@
         <ng-container *ngTemplateOutlet="cardArticle; context: { 'myarticle': item }"></ng-container>
     }
     <ng-template #cardArticle let-articlelocal="myarticle">
-        <app-card-article (click) = "clickArticle(articlelocal)" [article]="articlelocal"></app-card-article>
+        <app-card-article class ="pointer" (click) = "clickArticle(articlelocal)" [article]="articlelocal"></app-card-article>
     </ng-template>
     }
 </div>

@@ -43,4 +43,8 @@ export class AchatsViewComponent implements OnInit {
     this.itemPanierService.articleControl(rNameChild);
   }
 
+  onPrint() {
+    window.print();
+  }
+
 }

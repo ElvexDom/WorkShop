@@ -1,29 +1,89 @@
 .banniere {
-    border: 1px solid black;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin: 1%;
+    display: flex;
 }
 
 .nbarticles {
-    border: 1px solid black;
+    width: 48%;
+    border: 3px solid black;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     padding: 2%;
     text-align: center;
+    margin : 1%
+}
+@media print {
+    .nbarticles {
+        visibility: hidden;
+    }
 }
 
 .nbarticlespanier {
-    border: 1px solid black;
+    width: 48%;
+    border: 3px solid black;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     padding: 2%;
     text-align: center;
+    margin : 1%
+}
+@media print {
+    .nbarticlespanier  {
+        width: 90%;
+        position: fixed;
+        left: 0%;
+        right: 100%;
+        top: 15%;
+        bottom: 78%;
+    }
 }
 
-.achat-container {
-    border: 1px solid black;
+.container-list {
     display: flex;
-    margin: 1%;
-    align-items: center;
+}
+
+.container-list .list-article {
+    width: 48%;
+    border: 3px solid black;
+    padding: 2%;
+    text-align: center;
+    margin : 1%
+}
+@media print {
+    .list-article {
+        visibility: hidden;
+    }
+}
+
+.container-list .list-panier {
+    width: 48%;
+    border: 3px solid black;
+    padding: 2%;
+    text-align: center;
+    margin : 1%
+}
+@media print {
+    .container-list .list-panier {
+        width: 90%;
+        position: fixed;
+        left: 0%;
+        right: 100%;
+        top: 22%;
+        bottom: 10%;
+    }
+}
+
+.container-img {
+    display: flex;
+    justify-content: center;
+}
+@media print {
+    .container-img {
+        visibility: hidden;
+    }
+}
+.container-img .image {
+    width: 48px;
+    height: 48px;
+    border: 3px solid black;
+    border-radius: 50%;
 }
